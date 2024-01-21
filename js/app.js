@@ -98,6 +98,7 @@ function filtrar(busq){
     if(resultadoFiltrado.length === 0){
         limpiar();
         titulo.textContent = "No hay coincidencias";
+        titulo.classList.add("alerta", "error");
         console.log("no hay coincidencias" + titulo)
         return;
     }
